@@ -1,0 +1,38 @@
+/* 
+ Localizable.strings
+  SpaceX
+
+  Created by Renata Martins on 30/07/2021.
+  
+*/
+
+//Launches
+"launches-title" = "SpaceX";
+"launches-company" = "Company";
+"launches" = "Launches";
+"launches-mission" = "Mission:";
+"launches-date" = "Date/time:";
+"launches-rocket" = "Rocket:";
+"launches-since" = "Days since now:";
+"launches-from" = "Days from now:";
+"launches-cancel" = "Cancel";
+"launches-wikipedia" = "Open wikipedia";
+"launches-video" = "Open video";
+
+//Refine
+"refine" = "Refine";
+"refine-clear-all" = "Clear All";
+"refine-search" = "Search";
+"refine-filters" = "Filters";
+"refine-sort" = "Sort";
+"refine-sort-asc" = "Ascending";
+"refine-sort-desc" = "Descending";
+"refine-years" = "Years";
+"refine-launch-success" = "Launch success?";
+"refine-clear" = "Clear";
+
+//Empty
+"error-title" = "Oh No! The landing may have crash or not, I don't know!";
+"empty-title" = "You are pushing the filters to much... They crashed in an empty state!";
+//Commons
+"error-no-information" = "No information available, yet!";
