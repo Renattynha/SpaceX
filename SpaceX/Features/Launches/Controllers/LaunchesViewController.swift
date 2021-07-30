@@ -90,13 +90,14 @@ extension LaunchesViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(CompanyViewCell.self, for: indexPath)
             cell.configure(info: viewModel.company?.description ?? "error-no-information".localized)
-
+            cell.selectionStyle = .none
             return cell
         }
 
         let cell = tableView.dequeueReusableCell(LaunchesViewCell.self, for: indexPath)
         cell.backgroundColor = ColorPalete.white.toColor()
         cell.configure(launch: viewModel.data[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
 }
@@ -104,7 +105,9 @@ extension LaunchesViewController: UITableViewDataSource {
 extension LaunchesViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.viewModel.didSelectCellAtIndexPath(indexPath)
+        if indexPath.section != 0 {
+            self.viewModel.didSelectCellAtIndexPath(indexPath)
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

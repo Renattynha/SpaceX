@@ -52,14 +52,14 @@ class FormActionCellView: UITableViewCell, FormConformity {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(pressAction))
         contentView.addGestureRecognizer(tapGesture)
 
-        imgRight.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
+        imgRight.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
         imgRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
 
-        lblPlaceholder.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16).isActive = true
-        lblPlaceholder.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
-        lblPlaceholder.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
+        lblPlaceholder.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblPlaceholder.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblPlaceholder.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Spacing.M.rawValue).isActive = true
 
-        lblValue.leadingAnchor.constraint(equalTo: lblPlaceholder.trailingAnchor, constant: 4).isActive = true
+        lblValue.leadingAnchor.constraint(equalTo: lblPlaceholder.trailingAnchor, constant: Spacing.XS.rawValue).isActive = true
         lblValue.centerYAnchor.constraint(equalTo: lblPlaceholder.centerYAnchor).isActive = true
     }
 

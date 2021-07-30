@@ -21,5 +21,6 @@ extension RefineParameters {
 
         launch_success = nil
         launch_year = nil
+        order = nil
     }
 }

@@ -31,10 +31,10 @@ class CompanyViewCell: UITableViewCell {
     private func setup() {
 
         contentView.addSubview(lblInfo)
-        lblInfo.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
-        lblInfo.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
-        lblInfo.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16).isActive = true
-        lblInfo.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
+        lblInfo.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblInfo.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
+        lblInfo.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblInfo.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Spacing.M.rawValue).isActive = true
     }
 }
 

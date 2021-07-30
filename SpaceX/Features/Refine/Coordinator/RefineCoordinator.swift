@@ -31,6 +31,7 @@ class RefineCoordinator: Coordinator {
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        Appearance.configure(navigationController.navigationBar)
     }
 }
 

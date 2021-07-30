@@ -15,12 +15,12 @@ final class Appearance: NSObject {
 
         let navBarAppearance = UINavigationBarAppearance()
 
-        navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.titleTextAttributes = [.foregroundColor: ColorPalete.white.toColor()]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: ColorPalete.white.toColor()]
         navBarAppearance.backgroundColor = ColorPalete.orange.toColor()
         navBarAppearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: ColorPalete.white.toColor()]
 
+        navigationBar.tintColor = ColorPalete.white.toColor()
         navigationBar.prefersLargeTitles = true
         navigationBar.standardAppearance = navBarAppearance
         navigationBar.scrollEdgeAppearance = navBarAppearance

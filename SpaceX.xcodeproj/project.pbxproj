@@ -75,6 +75,7 @@
 		ADD20D5226B4587D001FA7FE /* EmptyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20D5126B4587D001FA7FE /* EmptyTableView.swift */; };
 		ADD20D5426B458F6001FA7FE /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20D5326B458F6001FA7FE /* EmptyView.swift */; };
 		ADD20D5926B46472001FA7FE /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20D5826B46472001FA7FE /* DateUtilsTests.swift */; };
+		ADD20D5B26B49B7D001FA7FE /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20D5A26B49B7D001FA7FE /* Spacing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,7 @@
 		ADD20D5126B4587D001FA7FE /* EmptyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableView.swift; sourceTree = "<group>"; };
 		ADD20D5326B458F6001FA7FE /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		ADD20D5826B46472001FA7FE /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
+		ADD20D5A26B49B7D001FA7FE /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1F40F126B0A45F002F5AFD /* ColorPalete.swift */,
+				ADD20D5A26B49B7D001FA7FE /* Spacing.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -840,6 +843,7 @@
 				AD1F40EC26B08191002F5AFD /* RefineViewController.swift in Sources */,
 				AD1F410626B0B270002F5AFD /* UIStackView+Utils.swift in Sources */,
 				AD1E8ECB26AF3DCB0005CC5E /* NetworkLogger.swift in Sources */,
+				ADD20D5B26B49B7D001FA7FE /* Spacing.swift in Sources */,
 				AD9B468626AEF352009FAA06 /* TreatDataResponse.swift in Sources */,
 				AD792E1A26B32DFD00CACD8C /* RefineProtocols.swift in Sources */,
 				AD1E8ECF26AF425F0005CC5E /* UITableView+Utils.swift in Sources */,

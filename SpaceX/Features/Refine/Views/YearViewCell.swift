@@ -12,7 +12,7 @@ class YearViewCell: UITableViewCell {
     private var lblValue: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.textColor = ColorPalete.silver.toColor()
+        lbl.textColor = ColorPalete.black.toColor()
         return lbl
     }()
 
@@ -43,14 +43,14 @@ class YearViewCell: UITableViewCell {
     private func setup() {
 
         contentView.addSubview(imgRight)
-        imgRight.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
+        imgRight.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
         imgRight.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
 
         contentView.addSubview(lblValue)
-        lblValue.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
-        lblValue.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16).isActive = true
-        lblValue.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
-        lblValue.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
+        lblValue.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblValue.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblValue.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
+        lblValue.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Spacing.M.rawValue).isActive = true
     }
 }
 

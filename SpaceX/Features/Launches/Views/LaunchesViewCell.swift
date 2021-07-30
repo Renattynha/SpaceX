@@ -59,20 +59,20 @@ class LaunchesViewCell: UITableViewCell {
     private func setup() {
 
         contentView.addSubview(img)
-        img.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
-        img.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16).isActive = true
-        img.heightAnchor.constraint(equalToConstant: 48).isActive = true
-        img.widthAnchor.constraint(equalToConstant: 48).isActive = true
+        img.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        img.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Spacing.M.rawValue).isActive = true
+        img.heightAnchor.constraint(equalToConstant: Sizing.L.rawValue).isActive = true
+        img.widthAnchor.constraint(equalToConstant: Sizing.L.rawValue).isActive = true
 
         contentView.addSubview(btLaunchSuccess)
-        btLaunchSuccess.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+        btLaunchSuccess.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
         btLaunchSuccess.topAnchor.constraint(equalTo: img.topAnchor).isActive = true
 
         contentView.addSubview(contentStackView)
-        contentStackView.leadingAnchor.constraint(equalTo: img.trailingAnchor, constant: 16).isActive = true
+        contentStackView.leadingAnchor.constraint(equalTo: img.trailingAnchor, constant: Spacing.M.rawValue).isActive = true
         contentStackView.topAnchor.constraint(equalTo: img.topAnchor).isActive = true
-        contentStackView.trailingAnchor.constraint(equalTo: btLaunchSuccess.leadingAnchor, constant: -8).isActive = true
-        contentStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
+        contentStackView.trailingAnchor.constraint(equalTo: btLaunchSuccess.leadingAnchor, constant: -Spacing.S.rawValue).isActive = true
+        contentStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Spacing.M.rawValue).isActive = true
     }
 }
 

@@ -48,7 +48,7 @@ class RowView: UIView {
 
         lblValue.topAnchor.constraint(equalTo: lblKey.topAnchor).isActive = true
         lblValue.bottomAnchor.constraint(equalTo: lblKey.bottomAnchor).isActive = true
-        lblValue.leadingAnchor.constraint(equalTo: lblKey.trailingAnchor, constant: 4).isActive = true
+        lblValue.leadingAnchor.constraint(equalTo: lblKey.trailingAnchor, constant: Spacing.XS.rawValue).isActive = true
     }
 }
 

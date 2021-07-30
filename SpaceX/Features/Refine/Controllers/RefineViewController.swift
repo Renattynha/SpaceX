@@ -58,10 +58,10 @@ class RefineViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 
         view.addSubview(btSearch)
-        btSearch.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        btSearch.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
-        btSearch.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
-        btSearch.heightAnchor.constraint(equalToConstant: 48).isActive = true
+        btSearch.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        btSearch.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
+        btSearch.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -Spacing.M.rawValue).isActive = true
+        btSearch.heightAnchor.constraint(equalToConstant: Sizing.L.rawValue).isActive = true
     }
 
     override func viewDidLoad() {

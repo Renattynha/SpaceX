@@ -82,13 +82,13 @@ public class EmptyView: UIView {
     private func defineSubviewConstraints() {
 
         lblTitle.bottomAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        lblTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-        lblTitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+        lblTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        lblTitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
 
-        btRetry.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-        btRetry.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
-        btRetry.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
-        btRetry.heightAnchor.constraint(equalToConstant: 48).isActive = true
+        btRetry.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Spacing.M.rawValue).isActive = true
+        btRetry.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Spacing.M.rawValue).isActive = true
+        btRetry.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -Spacing.M.rawValue).isActive = true
+        btRetry.heightAnchor.constraint(equalToConstant: Sizing.L.rawValue).isActive = true
 
         loading.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         loading.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
